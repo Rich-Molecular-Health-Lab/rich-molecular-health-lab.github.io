@@ -1,0 +1,402 @@
+---
+title: "The Team"
+description: |
+  Current Rich Lab Members
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    css: journal.css
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo    = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  comment = ""
+  )
+
+library(tidyverse)
+library(bslib)
+library(htmltools)
+
+source("card_template.R")
+```
+
+```{r rich}
+name_role <- "Dr. Alicia Rich, PI"
+photo     <- "headshot_rich.png"
+education <- list_education(
+  phd       = "Ph.D. (2018) - Indiana University",
+  masters   = "M.A. (2014) - Indiana University",
+  undergrad = "B.A. (2009) - Indiana University of Pennsylvania"
+)
+pronouns <- "She/Her"
+callme   <- "Dr. Rich/Alicia"
+research <- "Alicia's interdisciplinary research blends zoo management, biomedical science, and wildlife conservation, leveraging cutting-edge molecular tools to improve animal health and welfare. She has conducted extensive fieldwork in East Africa, particularly focused on primate molecular ecology/physiology at human-wildlife interfaces. Alicia actively collaborates with zoos and conservation organizations, translating scientific discoveries into practical conservation and welfare strategies."
+
+projects <- list(
+  "Nutritional intervention and the gut-endocrine-brain axis in captive primates",
+  "Phylogenetic history and taxonomic composition of the Provisional Pygmy Slow Loris Species Survival Plan",
+  "Creating a more rapid, mobile, and affordable method to sequence mammalian eDNA with Oxford Nanopore Adaptive Sampling"
+)
+
+personal <-  "I am a recovering competitive ultramarathoner/trail runner with hopes to return to training again one day. I'm also passionate about social justice, inclusion/accessibility, and activism."
+
+card_rich <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+```
+
+```{r azadmanesh}
+
+name_role <- "Shayda Azadmanesh, Graduate Student & Lab Manager"
+photo     <- "headshot_azadmanesh.jpg"
+education <- list_education(
+  masters   = "M.S. (in progress) - University of Nebraska Omaha",
+  undergrad = "B.S. () - University of Nebraska Omaha"
+)
+pronouns <- "She/Her"
+callme   <- "Shayda"
+research <- "Shayda focuses on the dietary and microbial ecology of primates, studying how nutritional interventions affect gut microbiome composition and inflammatory health. Her primary research examines dietary gum supplementation in marmosets, linking microbial communities to physiological inflammation. As lab manager, Shayda also coordinates comparative microbial studies across diverse primate groups, particularly between Lorisids and Callithrichids."
+
+projects <- list(
+  "Effects of dietary gum supplementation on marmoset gut microbiomes and inflammation",
+  "Comparative microbial and dietary ecology between Lorisids and Callithrichids"
+)
+
+personal <-  ""
+
+card_azadmanesh <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+```
+
+```{r raad}
+name_role <- "Thomas Raad, Graduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  masters   = "M.S. (in progress) - University of Nebraska Omaha",
+  undergrad = "B.S. () - "
+)
+pronouns <- "He/Him"
+callme   <- "Thomas"
+research <- "Thomas’s research uses innovative genomic methods to streamline conservation monitoring for urban bat populations. His work leverages Oxford Nanopore Adaptive Sampling for rapid and efficient detection of environmental DNA, significantly improving monitoring strategies. He also compares gut microbiomes and eDNA data to better understand how urban environments influence bat ecology, health, and conservation status."
+
+projects <- list(
+  "Streamlining bat conservation monitoring with Oxford Nanopore Adaptive Sampling",
+  "Comparative analysis of gut microbiomes and environmental DNA in urban bat populations"
+)
+
+personal <-  ""
+
+card_raad <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r stout}
+name_role <- "Anthony Stout, Graduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  masters   = "M.S. (in progress) - University of Nebraska Omaha",
+  undergrad = "B.S.(2024) - University of Nebraska Omaha"
+)
+pronouns <- "He/Him"
+callme   <- "Anthony"
+research <- "Anthony’s research explores how the gut-brain axis can be leveraged to enhance the welfare of captive primates. He investigates molecular health indicators, particularly DNA modifications, to understand the relationship between nutrition, microbiome diversity, and behavioral health. Anthony’s interdisciplinary approach combines molecular biology and behavioral ecology to optimize zoo animal management and conservation outcomes."
+
+projects <- list(
+  "Investigating the gut-brain axis to advance zoo primate welfare",
+  "DNA-modification and chronic disease risk"
+)
+
+personal <-  ""
+
+card_stout <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r briardy}
+name_role <- "Melissa Briardy, Graduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  masters   = "M.S. (in progress) - University of Nebraska Omaha",
+  undergrad = "B.S. () - University of Nebraska Omaha"
+)
+pronouns <- "She/Her"
+callme   <- "Missy"
+research <- "Missy investigates dietary interventions and their impacts on chronic gastrointestinal health in captive primates. Using pygmy lorises as a model, she examines long-term gut microbiome responses to targeted nutritional strategies aimed at reducing inflammation and managing chronic digestive issues."
+
+projects <- list(
+  "Dietary interventions and long-term gut microbiome dynamics in captive pygmy lorises"
+)
+
+personal <-  ""
+
+card_briardy <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r mcmullen}
+
+name_role <- "Zachary McMullen, Post-Bac Researcher"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  undergrad = "B.S.(2024) - University of Nebraska Omaha"
+)
+pronouns <- "He/Him"
+callme   <- "Zach"
+research <- "Zach specializes in characterizing microbial communities adapted to extreme environments. Currently, he is conducting genomic analyses of alkaline-tolerant microbiomes, aiming to identify key genetic adaptations that enable microbial survival under challenging conditions. His work integrates molecular genetics and bioinformatics to uncover insights into microbial resilience and potential applications in environmental biotechnology."
+
+projects <- list(
+  "Genomic characterization of alkaline-tolerant microbial communities."
+)
+
+
+personal <-  ""
+
+card_mcmullen <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r gill}
+name_role <- "Dedric Gill, Undergraduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  undergrad = "B.S.(in progress) - University of Nebraska Omaha"
+)
+pronouns <- "He/Him"
+callme   <- "Dedric"
+research <- "Dedric investigates how dietary components impact endocrine function and reproductive health in zoo primates. His research uses gas chromatography-mass spectrometry (GC-MS) to quantify phytoestrogens in primate diets, examining their effects on hormone regulation and reproductive physiology in pygmy lorises. Dedric’s work bridges nutritional biochemistry and precision veterinary medicine, providing critical insights for improved captive management."
+
+projects <- list(
+  "Analysis of phytoestrogen content in primate zoo diets using GC-MS"
+)
+
+personal <-  ""
+
+card_gill <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r segurapalacio}
+
+name_role <- "Trineca Segura-Palacio, Undergraduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  undergrad = "B.S.(in progress) - University of Nebraska Omaha"
+)
+pronouns <- "She/Her"
+callme   <- "Trin"
+research <- "Trin investigates captive pygmy lorises’ reproductive challenges, analyzing trends and identifying potential nutritional influences. Additionally, she assists ongoing projects related to the dietary factors influencing gut microbiome diversity and chronic inflammation, aiming to enhance overall health and welfare in captive primate populations."
+
+projects <- list(
+  "Analysis of phytoestrogen content in primate zoo diets using GC-MS"
+)
+
+personal <-  ""
+
+card_segura_palacio <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r bradley}
+name_role <- "Emily Bradley, Undergraduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  undergrad = "B.S.(in progress) - University of Nebraska Omaha"
+)
+pronouns <- "She/Her"
+callme   <- "Bradley"
+research <- "Bradley will join the lab in summer 2025 and looks forward to developing projects related to zoo management and computational biology/bioinformatics"
+
+projects <- list(
+  "TBD, new lab member in summer 2025"
+)
+
+personal <-  ""
+
+card_bradley <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+
+```
+
+```{r miller}
+
+name_role <- "Joel Miller, Undergraduate Student"
+photo     <- "logo_richlab.png"
+education <- list_education(
+  undergrad = "B.S.(in progress) - University of Nebraska Omaha"
+)
+pronouns <- "He/Him"
+callme   <- "Joel"
+research <- "Joel is broadly interested in marine biology, environmental studies, and conservation. He participates in lab meetings to explore potential interdisciplinary applications of molecular tools to marine environments, particularly using environmental DNA (eDNA) for monitoring ocean biodiversity."
+
+projects <- list(
+  "Exploring future directions in marine eDNA and biodiversity conservation (project planning stage)"
+)
+
+personal <-  ""
+
+card_miller <- card_template(
+  name_role, 
+  photo, 
+  education, 
+  pronouns, 
+  callme, 
+  research, 
+  projects,
+  personal
+  )
+```
+
+```{r}
+tags$img(file = "images/richlab_2025.jpg", width = "75%", alt = "Rich lab at the 2025 UNO Student Research Symposium")
+```
+
+---
+
+## PI
+
+```{r}
+card_rich
+tags$hr()
+```
+
+---
+
+## Graduate Students
+
+```{r}
+
+card_azadmanesh
+tags$hr()
+card_raad
+tags$hr()
+card_stout
+tags$hr()
+card_briardy
+tags$hr()
+```
+
+---
+
+## Undergraduate Students
+
+```{r}
+
+card_gill
+tags$hr()
+card_segura_palacio
+tags$hr()
+card_bradley
+tags$hr()
+card_miller
+tags$hr()
+
+```
+
+---
+
+## Research Assistants/Affliates
+
+```{r}
+card_mcmullen
+tags$hr()
+```
+
+---
+
+## Join Us!
+
+Are you interested in joining our lab?
+
+### For those interested in pursuing a graduate degree: {.unlisted}
+
+Send an email to the PI with a short explanation of why you are interested in this lab for your graduate research. Mention how your background/experience so far has guided your interest, and what about the work we are doing is a good fit for the kind of questions you see yourself investigating. Also, say a bit about what you are looking for in a graduate advisor/lab. Are you someone who works well under more structure or more freedom? What kind of logistical/social/academic support is most likely to help you succeed? I also encourage you to reach out to members or alums of this lab to gain some insight into what you might expect.
+
+### For those interested in getting undergraduate research experience: {.unlisted}
+
+If you can, then you should sign up for one of Dr. Rich’s elective classes - generally either Conservation Biology (offered every semester), Zoo Biology (offered every spring semester), or Human Health & the Environment (offered every fall semester). That is the best way to determine whether my research interests and the academic culture I foster align with your needs. You can enquire about opportunities in the lab at that time, or send an email. If we have some extra space available, you may start attending the weekly lab meetings. After that, students generally work out the level of commitment and independence they are looking for, and we plan your future in the lab from there.
+
+**Contact:** Dr. Alicia Rich ([Email](mailto:aliciarich@unomaha.edu))
+
+

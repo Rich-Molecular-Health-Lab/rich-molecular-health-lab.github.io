@@ -1,0 +1,28 @@
+name: "richlab"
+title: "Rich Lab for Molecular Health"
+favicon: images/logo_richlab.png
+base_url: https://rich-molecular-health-lab.github.io
+description: |
+  Molecular approaches to mammalian health, welfare, and conservation
+output_dir: "."
+exclude: ["archive/*", "extra_css/*"]
+
+navbar:
+  title: "Rich Lab"
+  class: "navbar navbar-expand-lg bg-dark"
+  logo:
+    image: images/logo_richlab.png
+    href: index.html
+  repository_url: https://github.com/Rich-Molecular-Health-Lab/.github.git
+  source_url: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Current Members"
+      href: team.html
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    css: journal.css
+site: distill::distill_website
