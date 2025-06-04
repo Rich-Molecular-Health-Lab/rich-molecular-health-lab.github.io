@@ -327,10 +327,7 @@ card_miller <- card_template(
   )
 ```
 
-```{r, results='asis'}
-tags$img(file = "images/richlab_2025.jpg", width = "75%", alt = "Rich lab at the 2025 UNO Student Research Symposium")
-```
-
+!["Rich lab at the 2025 UNO Student Research Symposium"](images/richlab_2025.jpg)
 ---
 
 ## PI

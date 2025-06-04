@@ -37,7 +37,7 @@ card_template <- function(name_role,
     card_header(tags$h3(name_role)),
     card_body(
       tags$div(layout_columns(col_widths = c(2, 10),
-                              card_image(file = paste0("images/", photo), border_radius = "all", width = "60%"),
+                              card_image(file = paste0("images/", photo), border_radius = "all", width = "100%"),
                               tags$div(education,
                                        tags$div(tags$span(
                                          tags$small(tags$b("Pronouns: "), tags$i(pronouns), tags$br(),
