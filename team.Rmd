@@ -327,7 +327,19 @@ card_miller <- card_template(
   )
 ```
 
-!["Rich lab at the 2025 UNO Student Research Symposium"](images/richlab_2025.jpg)
+```{r, results='asis'}
+card(
+  card_image(
+    file = "images/richlab_2025.jpg",
+    width = "75%"
+  ),
+  card_footer(
+    "Rich lab mambers at the 2025 UNO Student Research Symposium"
+  )
+)
+```
+
+
 ---
 
 ## PI
