@@ -20,8 +20,12 @@ knitr::opts_chunk$set(
   message = FALSE,
   comment = ""
   )
+library(tidyverse)
+library(bslib)
+library(htmltools)
 ```
 
+![](images/logo_richlab_small.png)
 
 Welcome to the Rich Molecular Health Lab at the University of Nebraska Omaha! We integrate molecular ecology and physiology, bioinformatics, wildlife conservation, biomedical sciences, and population biology. This comprehensive, interdisciplinary approach allows us to enhance the health, welfare, and conservation of primates and other mammals. Our evidence-based strategies directly inform animal care practices and global conservation efforts.
 
@@ -33,11 +37,61 @@ Welcome to the Rich Molecular Health Lab at the University of Nebraska Omaha! We
 
 Our lab applies advanced genomic techniques to study mammalian health, welfare, and conservation:
 
-- **Gut Microbiome and Chronic Disease Risk:** Investigating relationships between diet, microbiome composition, inflammation, and chronic disease in captive and wild primates.
-- **Bioactive Foods and Receptor Physiology:** Examining plant compounds in diets and their impacts on primate reproduction and endocrine health.
-- **Molecular Tools for Population Management:** Using portable sequencing technologies to perform rapid, low-cost, mitochondrial genome sequencing for improved species management and taxonomic revision.
-- **Environmental DNA (eDNA) Monitoring:** Developing streamlined methods for non-invasive genetic monitoring of urban and wild North American mammalian populations.
+- **Gut Microbiome and Chronic Disease Risk:** Investigating relationships between diet, microbiome composition, inflammation, and chronic disease in captive and wild primates (*e.g., Figure 1*).
+- **Bioactive Foods and Receptor Physiology:** Examining plant compounds in diets and their impacts on primate reproduction and endocrine health (*e.g., Figure 2*).
+- **Molecular Tools for Population Management:** Using portable sequencing technologies to perform rapid, low-cost, mitochondrial genome sequencing for improved species management and taxonomic revision (*Figure 3*).
+- **Environmental DNA (eDNA) Monitoring:** Developing streamlined methods for non-invasive genetic monitoring of urban and wild North American mammalian populations (*e.g., Figure 3*).
 - ***Heavy Metal Toxicity and Microbiome Buffering:*** Studying how heavy metals impact health and how gut microbiomes may mitigate toxic effects in zoo animals.
+
+### Graphical Summaries/Examples
+
+```{r, results='asis'}
+withTags(
+  page_fluid(
+    accordion(
+      open     = FALSE,
+      multiple = FALSE,
+      accordion_panel(
+        "Figure 1. Isoflavone metabolism.",
+        card(
+          card_image(
+            file = "graphics/isoflavone_metabolism.png"
+          ),
+          card_footer(
+            "Microbes and metabolic pathways mediate nutritional influences on endocrine function, inflammation, and chronic disease risk",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      ),
+      accordion_panel(
+        "Figure 2. Estrogenic foods.",
+        card(
+          card_image(
+            file = "graphics/phytoestrogen_examples.png"
+          ),
+          card_footer(
+            "Examples of common human foods containing plant compounds capable of impacting endocrine function and gene expression.",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      ),
+      accordion_panel(
+        "Figure 3. PCR-free eDNA Sequencing.",
+        card(
+          card_image(
+            file = "graphics/mtDNA_adaptivesampling.png"
+          ),
+          card_footer(
+            "Implementing Oxford Nanopore Technologies' Adaptive Sampling for a rapid, PCR-free approach to mtDNA sequencing and metabarcoding.",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      )
+    )
+  )
+)
+```
+
 
 ---
 
