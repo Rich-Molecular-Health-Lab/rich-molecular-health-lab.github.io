@@ -3,10 +3,13 @@ title: "The Team"
 description: |
   Current Rich Lab Members
 output:
-  distill::distill_article:
-    css: journal.css
+  html_document:
+    theme:
+      bslib: true
     toc: true
     toc_depth: 3
+    css: journal.css
+site: distill::distill_website
     
 ---
 
