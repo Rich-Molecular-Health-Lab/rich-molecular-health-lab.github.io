@@ -4,7 +4,7 @@ favicon: images/logo_richlab.png
 base_url: https://rich-molecular-health-lab.github.io
 description: |
   Molecular approaches to mammalian health, welfare, and conservation
-output_dir: "_site"
+output_dir: "."
 include: ["card_template.R"]
 exclude: ["archive/*", "extra_css/*"]
 
