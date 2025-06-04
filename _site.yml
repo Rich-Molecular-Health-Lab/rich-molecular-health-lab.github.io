@@ -22,7 +22,4 @@ navbar:
       href: team.html
 output:
   distill::distill_article:
-    toc: true
-    toc_depth: 3
     css: journal.css
-site: distill::distill_website

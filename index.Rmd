@@ -18,14 +18,6 @@ knitr::opts_chunk$set(
   message = FALSE,
   comment = ""
   )
-
-library(tidyverse)
-library(bslib)
-library(distill)
-library(htmltools)
-library(htmlwidgets)
-library(shiny)
-library(bslib)
 ```
 
 

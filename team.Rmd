@@ -4,9 +4,9 @@ description: |
   Current Rich Lab Members
 output:
   distill::distill_article:
+    css: journal.css
     toc: true
     toc_depth: 3
-    css: journal.css
     
 ---
 
@@ -17,10 +17,6 @@ knitr::opts_chunk$set(
   message = FALSE,
   comment = ""
   )
-
-library(tidyverse)
-library(bslib)
-library(htmltools)
 
 source("card_template.R")
 ```
@@ -328,7 +324,7 @@ card_miller <- card_template(
   )
 ```
 
-```{r}
+```{r, results='asis'}
 tags$img(file = "images/richlab_2025.jpg", width = "75%", alt = "Rich lab at the 2025 UNO Student Research Symposium")
 ```
 
@@ -336,7 +332,7 @@ tags$img(file = "images/richlab_2025.jpg", width = "75%", alt = "Rich lab at the
 
 ## PI
 
-```{r}
+```{r, results='asis'}
 card_rich
 tags$hr()
 ```
@@ -345,7 +341,7 @@ tags$hr()
 
 ## Graduate Students
 
-```{r}
+```{r, results='asis'}
 
 card_azadmanesh
 tags$hr()
@@ -361,7 +357,7 @@ tags$hr()
 
 ## Undergraduate Students
 
-```{r}
+```{r, results='asis'}
 
 card_gill
 tags$hr()
@@ -378,7 +374,7 @@ tags$hr()
 
 ## Research Assistants/Affliates
 
-```{r}
+```{r, results='asis'}
 card_mcmullen
 tags$hr()
 ```
