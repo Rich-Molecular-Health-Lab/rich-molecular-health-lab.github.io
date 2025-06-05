@@ -89,18 +89,19 @@ card_azadmanesh <- card_template(
 
 ```{r raad}
 name_role <- "Thomas Raad, Graduate Student"
-photo     <- "logo_richlab.png"
+photo     <- "headshot_raad.png"
 education <- list_education(
-  masters   = "M.S. (in progress) - University of Nebraska Omaha",
-  undergrad = "B.S. () - "
+  masters   = "M.S., Biology (in progress) - University of Nebraska Omaha",
+  undergrad = "B.S., Zoology (2020-2023) - Colorado State University"
 )
 pronouns <- "He/Him"
 callme   <- "Thomas"
-research <- "Thomas’s research uses innovative genomic methods to streamline conservation monitoring for urban bat populations. His work leverages Oxford Nanopore Adaptive Sampling for rapid and efficient detection of environmental DNA, significantly improving monitoring strategies. He also compares gut microbiomes and eDNA data to better understand how urban environments influence bat ecology, health, and conservation status."
+research <- "Thomas’ research uses innovative genomic methods to streamline conservation monitoring for bat populations. His work leverages Oxford Nanopore sequencing for eDNA and gut microbiome analyses, aiming to integrate molecular techniques to conservation effort of North American bat species. He hopes to analyze gut microbiomes and eDNA data to better understand how various environments influence bat ecology, health, and conservation status. His thesis also considers sexual segregation in bat populations to determine the variables that contribute to bat reproductive behavior."
 
 projects <- list(
   "Streamlining bat conservation monitoring with Oxford Nanopore Adaptive Sampling",
-  "Comparative analysis of gut microbiomes and environmental DNA in urban bat populations"
+  "Comparative analysis of gut microbiomes across North American bat populations",
+  "Sex Ratio in bats: A continental-scale analysis of environmental and landscape influences"
 )
 
 personal <-  ""
