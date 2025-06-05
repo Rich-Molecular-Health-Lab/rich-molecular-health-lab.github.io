@@ -17,8 +17,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Current Members"
+    - text: "Current Lab Members"
       href: team.html
+    - text: "UNO Courses"
+      href: teaching.html
 output:
   html_document:
     theme:
