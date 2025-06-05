@@ -242,7 +242,7 @@ card_gill <- card_template(
 ```{r segurapalacio}
 
 name_role <- "Trineca Segura-Palacio, Undergraduate Student"
-photo     <- "logo_richlab.png"
+photo     <- "headshot_segura-palacio.jpg"
 education <- list_education(
   undergrad = "B.S.(in progress) - University of Nebraska Omaha"
 )
