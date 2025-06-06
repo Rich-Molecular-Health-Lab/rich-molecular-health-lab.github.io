@@ -104,7 +104,7 @@ projects <- list(
   "Sex Ratio in bats: A continental-scale analysis of environmental and landscape influences"
 )
 
-personal <-  ""
+personal <-  "Jon Bellion superfan, currently obsessing over the first album release in 7 years. I spend my freetime consuming Marvel/Star Wars media (but I'm not a troll, I promise). "Andor" is best thing to ever happen to Star Wars, if you agree we can be friends."
 
 card_raad <- card_template(
   name_role, 
