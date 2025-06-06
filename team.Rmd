@@ -62,11 +62,11 @@ name_role <- "Shayda Azadmanesh, Graduate Student & Lab Manager"
 photo     <- "headshot_azadmanesh.jpg"
 education <- list_education(
   masters   = "M.S. (in progress) - University of Nebraska Omaha",
-  undergrad = "B.S. () - University of Nebraska Omaha"
+  undergrad = "B.S. (2020) - University of Nebraska Omaha"
 )
 pronouns <- "She/Her"
 callme   <- "Shayda"
-research <- "Shayda focuses on the dietary and microbial ecology of primates, studying how nutritional interventions affect gut microbiome composition and inflammatory health. Her primary research examines dietary gum supplementation in marmosets, linking microbial communities to physiological inflammation. As lab manager, Shayda also coordinates comparative microbial studies across diverse primate groups, particularly between Lorisids and Callithrichids."
+research <- "Shayda focuses on the dietary and microbial ecology of primates, studying how nutritional interventions affect gut microbiome composition and inflammatory health. Her primary research focuses on dietary gum supplementation in marmosets, examining the relationship between microbial communities and physiological inflammation. As lab manager, Shayda also coordinates comparative microbial studies across diverse primate groups, particularly between Lorisids and Callithrichids."
 
 projects <- list(
   "Effects of dietary gum supplementation on marmoset gut microbiomes and inflammation",
