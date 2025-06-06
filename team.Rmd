@@ -276,7 +276,7 @@ photo     <- "logo_richlab.png"
 education <- list_education(
   undergrad = "B.S.(in progress) - University of Nebraska Omaha"
 )
-pronouns <- "She/Her"
+pronouns <- "They/Them"
 callme   <- "Bradley"
 research <- "Bradley will join the lab in summer 2025 and looks forward to developing projects related to zoo management and computational biology/bioinformatics"
 
