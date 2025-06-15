@@ -19,7 +19,9 @@ navbar:
       href: index.html
     - text: "Current Lab Members"
       href: team.html
-    - text: "UNO Courses"
+    - text: "Tutorials for Lab Workflows"
+      href: https://rich-molecular-health-lab.github.io/tutorials/
+    - text: "Dr. Rich's Classes"
       href: teaching.html
 output:
   html_document:
