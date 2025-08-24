@@ -7,7 +7,7 @@ here::i_am("graphical_summaries.qmd")
 source(here::here("_common.R"))
 ```
 
-```{r}
+```{r, echo=FALSE}
 withTags(
   page_fluid(
     accordion(

@@ -5,6 +5,7 @@ project:
 website:
   title: "Rich Lab for Molecular Health"
   favicon: images/logo_richlab.png
+  site-url: "https://rich-molecular-health-lab.github.io"
   description: |
     "Molecular approaches to mammalian health, welfare, and conservation"
   navbar:
