@@ -5,6 +5,8 @@
 **/.Rapp.history
 
 # archived files
+_archive
+**/archive
 archive/*
 extra_css/*
 
