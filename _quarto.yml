@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: "docs"
+  execute-dir: project
+website:
+  title: "Rich Lab for Molecular Health"
+  favicon: images/logo_richlab.png
+  description: |
+    "Molecular approaches to mammalian health, welfare, and conservation"
+  navbar:
+    class: "navbar navbar-expand-lg bg-dark"
+    data-bs-theme: "dark"
+    logo-alt: "Rich Lab Website"
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Current Lab Members"
+        href: team.qmd
+      - text: "Tutorials for Lab Workflows"
+        href: https://rich-molecular-health-lab.github.io/tutorials/
+      - text: "Dr. Rich's Classes"
+        href: https://rich-molecular-health-lab.github.io/courses/
+format:
+  html:
+    theme:
+      - journal
+    page-layout: article
+    css:
+      - styles/journal.css
+      - styles/fonts.css
+      - styles/headings.css
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Cabin+Condensed:wght@400;500;600;700&family=Yaldevi:wght@200..700&display=swap" rel="stylesheet">
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    toc-title: "Contents"
+    smooth-scroll: true
+editor: source
+

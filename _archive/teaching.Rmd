@@ -1,0 +1,75 @@
+---
+title: "UNO Classes with Dr. Rich"
+description: |
+  Information for classes with Dr. Rich at the University of Nebraska Omaha
+output:
+  html_document:
+    theme:
+      bslib: true
+    toc: true
+    toc_depth: 3
+    css: journal.css
+site: distill::distill_website
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo    = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  comment = ""
+  )
+library(tidyverse)
+library(bslib)
+library(htmltools)
+source("course_card_template.R")
+```
+
+## Current Semester (Fall 2025)
+
+```{r hhe, results='asis'}
+tags$hr()
+course_card(
+  "ENVN-4320, BIOL-4030",
+  "hhe_f25",
+  "Fall 2025",
+  "<p>Explore how human health intersects with <b>environmental change, urbanization, and social justice</b> in this engaging interdisciplinary course designed to appeal broadly to students across the humanities, social sciences, pre-health fields, and environmental studies. Delve into critical contemporary issues such as <b>climate justice, urban health disparities, impacts of food production, emerging infectious diseases, and environmental toxicology</b>. Real-world case studies—including the Flint water crisis, zoonotic pandemics, and climate-induced health challenges—will ground your exploration in tangible scenarios.</p><p>Course materials uniquely incorporate curated <b>podcast playlists</b> and <b>documentary films</b>, <b>enriching discussions</b> and broadening perspectives on urgent global health and environmental challenges. Through lively discussions and practical activities, you'll develop thoughtful insights and innovative ideas for creating healthier communities and sustainable futures.</p>",
+  "T/R, 4:00 - 4:15",
+  "Fall",
+  3
+)
+
+tags$hr()
+```
+
+```{r conbio, results='asis'}
+course_card(
+  "BIOL-4120, BIOL-8126",
+  "conbio_s25",
+  "Spring 2025",
+  "<p>Engage with the urgent task of protecting biodiversity in Conservation Biology—a dynamic, interdisciplinary course addressing the global ecological crisis. Often described as a <emph>crisis discipline</emph>, conservation biology emphasizes swift, informed actions in response to rapidly evolving environmental challenges. You'll explore topics like <b>species extinction, habitat loss, ecosystem management, invasive species, climate impacts, and conservation genetics</b> through engaging discussions and real-world case studies. Skills-based assignments and activities will introduce you to <b>essential tools for management, practical application, and quantitative assessment</b>.</p><p>Open to students across biology, environmental sciences, social sciences, and humanities, this course empowers you with the knowledge and practical skills needed to contribute meaningfully to conservation efforts.</p>",
+  "M/W, 4:00 - 4:15",
+  "Fall & Spring",
+  3
+)
+
+tags$hr()
+```
+
+## Past/Future Semesters
+
+```{r zoobio, results='asis'}
+course_card(
+  "BIOL-4030/4034",
+  "zoobio_s25",
+  "Spring 2025",
+  "<p>Dive into the fascinating world of zoo biology, where conservation, animal welfare, and management intersect. This dynamic course explores the roles of modern zoos in <b>biodiversity conservation</b>, <b>assurance populations</b>, and <b>community engagement</b>. Engage deeply with key topics such as <b>population genetics and demography</b>, <b>nutrition</b>, <b>reproductive technologies</b>, <b>behavioral training</b>, <b>environmental enrichment</b>, and <b>welfare assessment</b>.</p><p>Through interactive labs and workshops, you'll gain hands-on experience in creating Institutional Collection Plans, designing enrichment programs, analyzing studbook data, and assessing animal welfare. Critically examine ethical considerations and emerging practices shaping the future of zoos, and develop practical, evidence-based strategies to enhance animal care and conservation outcomes.</p>",
+  "M/W, 1:00 - 2:15 | T (labs), 1:00 - 3:50",
+  "Spring",
+  4
+)
+
+tags$hr()
+```
+
