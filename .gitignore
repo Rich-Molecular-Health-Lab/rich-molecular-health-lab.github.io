@@ -74,3 +74,5 @@ cuda11.8/**
 cmake-env/**
 dorado-env/**
 ../dorado/**
+
+/.quarto/

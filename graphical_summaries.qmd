@@ -1,0 +1,55 @@
+---
+format: html
+---
+
+```{r setup, include=FALSE}
+here::i_am("graphical_summaries.qmd")
+source(here::here("_common.R"))
+```
+
+```{r}
+withTags(
+  page_fluid(
+    accordion(
+      open     = FALSE,
+      multiple = FALSE,
+      accordion_panel(
+        "Figure 1. Isoflavone metabolism.",
+        card(
+          card_image(
+            file = here("graphics/isoflavone_metabolism.png")
+          ),
+          card_footer(
+            "Microbes and metabolic pathways mediate nutritional influences on endocrine function, inflammation, and chronic disease risk",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      ),
+      accordion_panel(
+        "Figure 2. Estrogenic foods.",
+        card(
+          card_image(
+            file = here("graphics/phytoestrogen_examples.png")
+          ),
+          card_footer(
+            "Examples of common human foods containing plant compounds capable of impacting endocrine function and gene expression.",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      ),
+      accordion_panel(
+        "Figure 3. PCR-free eDNA Sequencing.",
+        card(
+          card_image(
+            file = here("graphics/mtDNA_adaptivesampling.png")
+          ),
+          card_footer(
+            "Implementing Oxford Nanopore Technologies' Adaptive Sampling for a rapid, PCR-free approach to mtDNA sequencing and metabarcoding.",
+            small(i("(produced with Biorender)."))
+          )
+        )
+      )
+    )
+  )
+)
+```
